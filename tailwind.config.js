@@ -6,12 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        'screen-2xl': '1400px',
+      },
       colors: {
         primary: '#ff6b35',
         dark: '#1a1a1a',
         light: '#f5f5f5',
         accent: '#00d4ff',
         'accent-2': '#7c3aed',
+      },
+      spacing: {
+        'section': '5rem',
+        'section-md': '4rem',
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',

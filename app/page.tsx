@@ -14,13 +14,13 @@ export default function Home() {
       <Hero />
 
       {/* Event Details */}
-      <section id="event" className="py-16">
+      <section id="event" className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-dark mb-4 text-center animate-slideIn">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-dark mb-6 text-center animate-slideIn">
               About <span className="text-primary">AI-GAMNET</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed">
               {eventInfo.description}
             </p>
           </div>

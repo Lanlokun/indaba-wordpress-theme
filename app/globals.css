@@ -21,11 +21,11 @@ body {
 }
 
 .container {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-[1400px] mx-auto;
 }
 
 section {
-  @apply py-12 md:py-16;
+  @apply py-16 md:py-20;
 }
 
 h2 {
@@ -131,4 +131,46 @@ h2 {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Responsive Container Padding */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Section Spacing Utilities */
+.section-title {
+  @apply text-4xl md:text-5xl font-black text-dark mb-6;
+}
+
+.section-subtitle {
+  @apply text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed;
+}
+
+.section-spacing {
+  @apply mb-16 text-center;
+}
+
+/* Card Styling Consistency */
+.card-hover {
+  @apply rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2;
+}
+
+/* Typography Hierarchy */
+h1 {
+  @apply font-black tracking-tight;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl font-black;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-bold;
+}
+
+h4 {
+  @apply font-bold text-lg;
 }

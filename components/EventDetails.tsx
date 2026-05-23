@@ -27,17 +27,17 @@ const eventDetails = [
 
 export default function EventDetails() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
       {eventDetails.map((detail, index) => {
         const Icon = detail.icon
         return (
           <div
             key={index}
-            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="p-8 bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2"
           >
-            <Icon className="w-8 h-8 text-primary mb-4" />
-            <h4 className="text-lg font-bold mb-2">{detail.title}</h4>
-            <p className="text-gray-600">{detail.content}</p>
+            <Icon className="w-10 h-10 text-primary mb-4" />
+            <h4 className="text-lg font-bold text-dark mb-3">{detail.title}</h4>
+            <p className="text-gray-600 leading-relaxed">{detail.content}</p>
           </div>
         )
       })}

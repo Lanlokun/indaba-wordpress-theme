@@ -14,22 +14,22 @@ const categoryColors: Record<string, string> = {
 
 export default function UpcomingEvents() {
   return (
-    <section id="events" className="py-16 bg-light">
+    <section id="events" className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
-        <div className="mb-12">
-          <h2 className="text-4xl font-bold text-dark mb-4 text-center animate-slideIn">
-            Upcoming Events
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl md:text-5xl font-black text-dark mb-6 animate-slideIn">
+            Upcoming <span className="text-primary">Events</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Join us for workshops, webinars, and networking opportunities. Be part of the AI-GAMNET community and stay updated with the latest in AI and machine learning.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {upcomingEvents.map((event) => (
             <div
               key={event.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden animate-fadeIn"
+              className="bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2 overflow-hidden animate-fadeIn"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">

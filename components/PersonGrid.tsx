@@ -19,14 +19,14 @@ interface PersonGridProps {
 
 export default function PersonGrid({ title, subtitle, people }: PersonGridProps) {
   return (
-    <section id={title.toLowerCase().replace(/\s+/g, '-')} className="py-16 bg-light">
+    <section id={title.toLowerCase().replace(/\s+/g, '-')} className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-bold text-dark mb-4 animate-slideIn">{title}</h2>
-          {subtitle && <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>}
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl md:text-5xl font-black text-dark mb-4 animate-slideIn">{title}</h2>
+          {subtitle && <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">{subtitle}</p>}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {people.map((person) => (
             <PersonCard
               key={person.id}
