@@ -22,7 +22,7 @@ export default function PersonGrid({ title, subtitle, people }: PersonGridProps)
     <section id={title.toLowerCase().replace(/\s+/g, '-')} className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-dark mb-4 animate-slideIn">{title}</h2>
+          <h2 className="animate-slideIn">{title}</h2>
           {subtitle && <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">{subtitle}</p>}
         </div>
 

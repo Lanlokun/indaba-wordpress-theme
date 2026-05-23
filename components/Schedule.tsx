@@ -17,7 +17,7 @@ export default function Schedule() {
   return (
     <section id="schedule" className="py-20 lg:py-28">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-black text-dark mb-16 text-center animate-slideIn">
+        <h2 className="mb-16 text-center animate-slideIn">
           Conference <span className="text-primary">Schedule</span>
         </h2>
 
@@ -39,7 +39,7 @@ export default function Schedule() {
 
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="bg-gradient-to-r from-primary to-accent text-white p-8">
-            <h3 className="text-2xl font-bold mb-2">{currentDay.title}</h3>
+            <h3 className="text-white mb-2">{currentDay.title}</h3>
             <p className="text-sm opacity-90">{currentDay.date}</p>
           </div>
 

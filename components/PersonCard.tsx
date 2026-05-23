@@ -49,11 +49,11 @@ export default function PersonCard({ name, role, position, image }: PersonCardPr
         {/* Top Border Animation */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
 
-        <h3 className="text-lg font-bold text-dark mb-2 group-hover:text-primary transition-colors duration-300">
+        <h3 className="text-lg md:text-xl font-bold text-dark mb-1 group-hover:text-primary transition-colors duration-300">
           {name}
         </h3>
-        <h5 className="text-sm font-semibold text-primary mb-1">{role}</h5>
-        <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed">
+        <p className="text-xs md:text-sm font-semibold text-primary mb-2">{role}</p>
+        <p className="text-xs md:text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed">
           {position}
         </p>
 

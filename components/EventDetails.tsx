@@ -36,7 +36,7 @@ export default function EventDetails() {
             className="p-8 bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2"
           >
             <Icon className="w-10 h-10 text-primary mb-4" />
-            <h4 className="text-lg font-bold text-dark mb-3">{detail.title}</h4>
+            <h4>{detail.title}</h4>
             <p className="text-gray-600 leading-relaxed">{detail.content}</p>
           </div>
         )

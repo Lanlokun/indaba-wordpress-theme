@@ -17,7 +17,7 @@ export default function UpcomingEvents() {
     <section id="events" className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-dark mb-6 animate-slideIn">
+          <h2 className="animate-slideIn">
             Upcoming <span className="text-primary">Events</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -42,8 +42,8 @@ export default function UpcomingEvents() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-dark mb-2">{event.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{event.description}</p>
+                <h3 className="mb-2">{event.title}</h3>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">{event.description}</p>
 
                 <div className="space-y-2 mb-6">
                   <div className="flex items-center gap-2 text-gray-700 group/icon hover:text-primary transition-colors duration-300">

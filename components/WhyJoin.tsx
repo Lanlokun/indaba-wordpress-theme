@@ -17,7 +17,7 @@ export default function WhyJoin() {
     <section id="why-join" className="py-20 lg:py-28 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-dark mb-6 animate-slideIn">Why Join <span className="text-primary">AI-GAMNET?</span></h2>
+          <h2 className="animate-slideIn">Why Join <span className="text-primary">AI-GAMNET?</span></h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
             AI-GamNet aims to build a sustainable pan-African community of AI expertise,<br />
             create local leadership in AI across The Gambia,<br /> and

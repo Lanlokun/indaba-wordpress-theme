@@ -17,7 +17,7 @@ export default function Home() {
       <section id="event" className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-dark mb-6 text-center animate-slideIn">
+            <h2 className="text-center animate-slideIn">
               About <span className="text-primary">AI-GAMNET</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed">

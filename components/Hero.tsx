@@ -50,7 +50,7 @@ export default function Hero() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 font-medium max-w-3xl mx-auto">
+          <p className="text-subheading text-gray-300 mb-4 max-w-3xl mx-auto">
             {eventInfo.subtitle}
           </p>
 
@@ -114,7 +114,7 @@ export default function Hero() {
 
         {/* Description Section */}
         <div className="mt-20 text-center max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '400ms' }}>
-          <p className="text-lg text-gray-400 leading-relaxed mb-6">
+          <p className="text-body text-gray-400 mb-6">
             {eventInfo.description}
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
