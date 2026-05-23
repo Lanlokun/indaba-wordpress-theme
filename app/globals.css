@@ -95,6 +95,62 @@ h2 {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgba(255, 107, 53, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 107, 53, 0.8);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline-expand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -114,6 +170,111 @@ h2 {
 .animate-gradient-shift {
   animation: gradient-shift 15s ease infinite;
   background-size: 200% 200%;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 1000px 100%;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+.animate-rotate-icon {
+  animation: rotate-icon 0.8s ease-in-out;
+}
+
+.animate-pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Interactive Button States */
+.btn-primary {
+  @apply px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+.btn-primary:hover {
+  @apply -translate-y-1;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-primary hover:text-white;
+}
+
+/* Navigation Link Hover */
+.nav-link {
+  @apply text-gray-600 font-medium transition-all duration-300 relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  @apply text-primary;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Card Interactive States */
+.card-interactive {
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+}
+
+.card-image-hover img {
+  @apply transition-all duration-300 transform;
+}
+
+.card-image-hover:hover img {
+  @apply scale-110;
+}
+
+/* Icon Animation */
+.icon-hover {
+  @apply transition-all duration-300 transform;
+}
+
+.icon-hover:hover {
+  @apply scale-110 rotate-12;
+}
+
+/* Smooth Underline Effect */
+.underline-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.underline-animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* Grid Pattern */

@@ -26,10 +26,10 @@ export default function Schedule() {
             <button
               key={key}
               onClick={() => setActiveDay(key)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
                 activeDay === key
-                  ? 'bg-primary text-white shadow-lg hover:shadow-xl'
-                  : 'bg-white text-dark border-2 border-primary hover:bg-light hover:shadow-md'
+                  ? 'bg-primary text-white shadow-lg hover:shadow-2xl hover:shadow-primary/50 -translate-y-1'
+                  : 'bg-white text-dark border-2 border-primary hover:bg-light hover:shadow-lg hover:border-primary hover:-translate-y-1 focus:ring-primary'
               }`}
             >
               {label}

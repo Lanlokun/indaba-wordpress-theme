@@ -45,31 +45,29 @@ export default function UpcomingEvents() {
                 <h3 className="text-xl font-bold text-dark mb-2">{event.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{event.description}</p>
 
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Calendar className="w-4 h-4 text-primary" />
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center gap-2 text-gray-700 group/icon hover:text-primary transition-colors duration-300">
+                    <Calendar className="w-4 h-4 text-primary transition-transform duration-300 group-hover/icon:scale-110" />
                     <span className="text-sm font-medium">{event.date}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Clock className="w-4 h-4 text-primary" />
+                  <div className="flex items-center gap-2 text-gray-700 group/icon hover:text-primary transition-colors duration-300">
+                    <Clock className="w-4 h-4 text-primary transition-transform duration-300 group-hover/icon:scale-110" />
                     <span className="text-sm font-medium">{event.time}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="w-4 h-4 text-primary" />
+                  <div className="flex items-center gap-2 text-gray-700 group/icon hover:text-primary transition-colors duration-300">
+                    <MapPin className="w-4 h-4 text-primary transition-transform duration-300 group-hover/icon:scale-110" />
                     <span className="text-sm font-medium">{event.location}</span>
                   </div>
                 </div>
 
-                <button className="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all font-semibold">
-                  <a
-                    href={event.registration}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all font-semibold"
-                    >
-                    Register Now
+                <a
+                  href={event.registration}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-full btn-primary text-center"
+                >
+                  Register Now
                 </a>
-                </button>
               </div>
             </div>
           ))}

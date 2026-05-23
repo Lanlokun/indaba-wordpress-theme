@@ -20,14 +20,14 @@ export default function Sponsors() {
             <a
               key={sponsor.id}
               href={sponsor.link}
-              className="flex items-center justify-center p-8 bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2"
+              className="group flex items-center justify-center p-8 bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="relative w-48 h-32">
+              <div className="relative w-48 h-32 overflow-hidden rounded-lg">
                 <Image
                   src={sponsor.image}
                   alt={sponsor.name}
                   fill
-                  className="object-contain"
+                  className="object-contain group-hover:scale-110 transition-transform duration-500"
                   onError={(e) => {
                     e.currentTarget.src = '/images/Ousman-Bah.webp'
                   }}
