@@ -30,34 +30,34 @@ export const speakers = [
     position: 'Research Scientist in AI',
       image: OusmanBah,
   },
-  {
-    id: 5,
-    name: 'Honourable Ousman Bah',
-    role: 'Ministry of Communications and Digital Economy',
-    position: 'Minister',
-    image: OusmanBah,
-  },
-  {
-    id: 6,
-    name: 'Dr. Sheriffo Ceesay',
-    role: 'Huawei Technologies Research',
-    position: 'Senior Research Engineer',
-    image: OusmanBah,
-  },
-  {
-    id: 7,
-    name: 'Mr. Fred Sangol Uche',
-    role: 'Medical Research Council Gambia',
-    position: 'Researcher and Developer',
-    image: OusmanBah,
-  },
-  {
-    id: 8,
-    name: 'Dr. Ismaël KONÉ',
-    role: 'Medical Research Council Gambia',
-    position: 'Data Science Postdoctoral Researcher in Epidemics',
-      image: OusmanBah,
-  },
+  // {
+  //   id: 5,
+  //   name: 'Honourable Ousman Bah',
+  //   role: 'Ministry of Communications and Digital Economy',
+  //   position: 'Minister',
+  //   image: OusmanBah,
+  // },
+  // {
+  //   id: 6,
+  //   name: 'Dr. Sheriffo Ceesay',
+  //   role: 'Huawei Technologies Research',
+  //   position: 'Senior Research Engineer',
+  //   image: OusmanBah,
+  // },
+  // {
+  //   id: 7,
+  //   name: 'Mr. Fred Sangol Uche',
+  //   role: 'Medical Research Council Gambia',
+  //   position: 'Researcher and Developer',
+  //   image: OusmanBah,
+  // },
+  // {
+  //   id: 8,
+  //   name: 'Dr. Ismaël KONÉ',
+  //   role: 'Medical Research Council Gambia',
+  //   position: 'Data Science Postdoctoral Researcher in Epidemics',
+  //     image: OusmanBah,
+  // },
 ]
 
 export const organizers = [

@@ -6,7 +6,7 @@ import { sponsors } from '@/data/sponsors'
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="py-20 lg:py-28 bg-light">
+    <section id="sponsors" className="py-12 lg:py-16 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="animate-slideIn">Our <span className="text-primary">Partners</span></h2>

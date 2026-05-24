@@ -19,7 +19,7 @@ interface PersonGridProps {
 
 export default function PersonGrid({ title, subtitle, people }: PersonGridProps) {
   return (
-    <section id={title.toLowerCase().replace(/\s+/g, '-')} className="py-20 lg:py-28 bg-light">
+    <section id={title.toLowerCase().replace(/\s+/g, '-')} className="py-12 lg:py-16 bg-light">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
           <h2 className="animate-slideIn">{title}</h2>

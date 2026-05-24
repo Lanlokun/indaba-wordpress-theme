@@ -3,6 +3,7 @@ import EventDetails from '@/components/EventDetails'
 import WhyJoin from '@/components/WhyJoin'
 import PersonGrid from '@/components/PersonGrid'
 import UpcomingEvents from '@/components/UpcomingEvents'
+import IndabaXSection from '@/components/IndabaXSection'
 import Sponsors from '@/components/Sponsors'
 import { speakers, organizers, volunteers } from '@/data/people'
 import { eventInfo } from '@/data/event'
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero />
 
       {/* Event Details */}
-      <section id="event" className="py-20 lg:py-28">
+      <section id="event" className="py-12 lg:py-16">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <h2 className="text-center animate-slideIn">
@@ -40,6 +41,9 @@ export default function Home() {
 
       {/* Upcoming Events */}
       <UpcomingEvents />
+
+      {/* IndabaX Section */}
+      <IndabaXSection />
 
       {/* Sponsors */}
       <Sponsors />

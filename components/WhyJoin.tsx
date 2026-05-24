@@ -14,7 +14,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function WhyJoin() {
   return (
-    <section id="why-join" className="py-20 lg:py-28 bg-light">
+    <section id="why-join" className="py-12 lg:py-16 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="animate-slideIn">Why Join <span className="text-primary">AI-GAMNET?</span></h2>

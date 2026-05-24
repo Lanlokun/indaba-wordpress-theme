@@ -15,7 +15,7 @@ export default function Schedule() {
   const currentDay = schedule[activeDay]
 
   return (
-    <section id="schedule" className="py-20 lg:py-28">
+    <section id="schedule" className="py-12 lg:py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-16 text-center animate-slideIn">
           Conference <span className="text-primary">Schedule</span>

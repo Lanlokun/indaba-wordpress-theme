@@ -114,7 +114,7 @@ export default function Hero() {
 
         {/* Description Section */}
         <div className="mt-20 text-center max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '400ms' }}>
-          <p className="text-body text-gray-400 mb-6">
+          <p className="text-body text-white mb-6">
             {eventInfo.description}
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
