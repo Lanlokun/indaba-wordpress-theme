@@ -48,11 +48,21 @@ export default function Home() {
       {/* Sponsors */}
       <Sponsors />
 
-      {/* Organizers */}
-      <PersonGrid title="Executive" people={organizers} />
+      {/* Organizers - Horizontal Layout */}
+      <PersonGrid
+        title="Executive"
+        people={organizers}
+        variant="horizontal"
+        gridCols="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      />
 
-      {/* Volunteers */}
-      <PersonGrid title="Volunteer Members" people={volunteers} />
+      {/* Volunteers - Compact Layout */}
+      <PersonGrid
+        title="Volunteer Members"
+        people={volunteers}
+        variant="compact"
+        gridCols="grid-cols-1 md:grid-cols-3 lg:grid-cols-5"
+      />
     </main>
   )
 }

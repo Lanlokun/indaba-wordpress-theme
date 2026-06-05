@@ -1,6 +1,5 @@
 import OusmanBah from '@/assets/images/Ousman-Bah.webp'
 
-
 export const speakers = [
   {
     id: 1,
@@ -8,6 +7,7 @@ export const speakers = [
     role: 'DevData Analytics',
     position: 'Cofounder & CTO, DevData Analytics, Tanzania',
     image: OusmanBah,
+    tags: ['Machine Learning', 'Data Analytics', 'Research'],
   },
   {
     id: 2,
@@ -15,21 +15,25 @@ export const speakers = [
     role: 'University of The Gambia',
     position: 'Dean, Faculty of I.C.T',
     image: OusmanBah,
+    tags: ['Education', 'Leadership', 'Academia'],
   },
   {
     id: 3,
     name: 'Dr. Ernest Mwebaze',
     role: 'Sunbird AI',
     position: 'Strategy Lead, Sunbird AI, Uganda',
-      image: OusmanBah,
+    image: OusmanBah,
+    tags: ['AI Strategy', 'Innovation', 'Africa'],
   },
   {
     id: 4,
     name: 'Prof. Moustapha Cisse',
     role: 'Google AI Center',
     position: 'Research Scientist in AI',
-      image: OusmanBah,
+    image: OusmanBah,
+    tags: ['Deep Learning', 'Research', 'Google AI'],
   },
+<<<<<<< Updated upstream
   // {
   //   id: 5,
   //   name: 'Honourable Ousman Bah',
@@ -58,6 +62,39 @@ export const speakers = [
   //   position: 'Data Science Postdoctoral Researcher in Epidemics',
   //     image: OusmanBah,
   // },
+=======
+<<<<<<< Updated upstream
+  {
+    id: 5,
+    name: 'Honourable Ousman Bah',
+    role: 'Ministry of Communications and Digital Economy',
+    position: 'Minister',
+    image: OusmanBah,
+  },
+  {
+    id: 6,
+    name: 'Dr. Sheriffo Ceesay',
+    role: 'Huawei Technologies Research',
+    position: 'Senior Research Engineer',
+    image: OusmanBah,
+  },
+  {
+    id: 7,
+    name: 'Mr. Fred Sangol Uche',
+    role: 'Medical Research Council Gambia',
+    position: 'Researcher and Developer',
+    image: OusmanBah,
+  },
+  {
+    id: 8,
+    name: 'Dr. Ismaël KONÉ',
+    role: 'Medical Research Council Gambia',
+    position: 'Data Science Postdoctoral Researcher in Epidemics',
+      image: OusmanBah,
+  },
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 ]
 
 export const organizers = [
@@ -66,7 +103,8 @@ export const organizers = [
     name: 'Mr. Lamarana Jallow',
     role: 'University of The Gambia',
     position: 'Lecturer',
-      image: OusmanBah,
+    image: OusmanBah,
+    tags: ['Organizer', 'Academia'],
   },
   {
     id: 2,
@@ -74,6 +112,7 @@ export const organizers = [
     role: 'Medical Research Council Unit Gambia',
     position: 'Head of Data Science',
     image: OusmanBah,
+    tags: ['Data Science', 'Leadership', 'Research'],
   },
   {
     id: 3,
@@ -81,6 +120,7 @@ export const organizers = [
     role: 'Medical Research Council Unit Gambia',
     position: 'Researcher & Developer',
     image: OusmanBah,
+    tags: ['Development', 'Research'],
   },
   {
     id: 4,
@@ -88,6 +128,7 @@ export const organizers = [
     role: 'Huawei Technologies Research',
     position: 'Senior Research Engineer',
     image: OusmanBah,
+    tags: ['Engineering', 'Research', 'Industry'],
   },
   {
     id: 5,
@@ -95,6 +136,7 @@ export const organizers = [
     role: 'The Hub Ltd',
     position: 'CEO and Co-Founder',
     image: OusmanBah,
+    tags: ['Entrepreneurship', 'Leadership'],
   },
   {
     id: 6,
@@ -102,6 +144,7 @@ export const organizers = [
     role: 'Gambia Bureau of Statistics',
     position: 'Principal Statistician',
     image: OusmanBah,
+    tags: ['Statistics', 'Data'],
   },
   {
     id: 7,
@@ -109,6 +152,7 @@ export const organizers = [
     role: 'Lasting Solutions Ltd',
     position: 'Director and Co-founder',
     image: OusmanBah,
+    tags: ['Business', 'Technology'],
   },
   {
     id: 8,
@@ -116,6 +160,7 @@ export const organizers = [
     role: 'University Of The Gambia',
     position: 'Director of IT',
     image: OusmanBah,
+    tags: ['IT Infrastructure', 'Leadership'],
   },
 ]
 
@@ -126,6 +171,7 @@ export const volunteers = [
     role: 'University of The Gambia',
     position: 'Software Engineer & Intelligent Systems TA',
     image: OusmanBah,
+    tags: ['Software Engineering', 'Teaching'],
   },
   {
     id: 2,
@@ -133,6 +179,7 @@ export const volunteers = [
     role: 'University of The Gambia',
     position: 'Graduate Assistant',
     image: OusmanBah,
+    tags: ['Support', 'Academia'],
   },
   {
     id: 3,
@@ -140,6 +187,7 @@ export const volunteers = [
     role: 'Locumator',
     position: 'Product Engineer',
     image: OusmanBah,
+    tags: ['Product', 'Engineering'],
   },
   {
     id: 4,
@@ -147,6 +195,7 @@ export const volunteers = [
     role: 'World Bank Group',
     position: 'IT Assistant',
     image: OusmanBah,
+    tags: ['IT Support', 'Development'],
   },
   {
     id: 5,
@@ -154,5 +203,6 @@ export const volunteers = [
     role: 'Cerenade',
     position: 'Position',
     image: OusmanBah,
+    tags: ['Technology', 'Innovation'],
   },
 ]
