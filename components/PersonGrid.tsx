@@ -38,15 +38,7 @@ export default function PersonGrid({
           {subtitle && <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">{subtitle}</p>}
         </div>
 
-<<<<<<< Updated upstream
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-=======
-<<<<<<< Updated upstream
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-=======
         <div className={`grid ${gridCols} gap-6 lg:gap-8`}>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
           {people.map((person) => (
             <PersonCard
               key={person.id}

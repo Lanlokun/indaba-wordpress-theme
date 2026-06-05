@@ -33,43 +33,13 @@ export const speakers = [
     image: OusmanBah,
     tags: ['Deep Learning', 'Research', 'Google AI'],
   },
-<<<<<<< Updated upstream
-  // {
-  //   id: 5,
-  //   name: 'Honourable Ousman Bah',
-  //   role: 'Ministry of Communications and Digital Economy',
-  //   position: 'Minister',
-  //   image: OusmanBah,
-  // },
-  // {
-  //   id: 6,
-  //   name: 'Dr. Sheriffo Ceesay',
-  //   role: 'Huawei Technologies Research',
-  //   position: 'Senior Research Engineer',
-  //   image: OusmanBah,
-  // },
-  // {
-  //   id: 7,
-  //   name: 'Mr. Fred Sangol Uche',
-  //   role: 'Medical Research Council Gambia',
-  //   position: 'Researcher and Developer',
-  //   image: OusmanBah,
-  // },
-  // {
-  //   id: 8,
-  //   name: 'Dr. Ismaël KONÉ',
-  //   role: 'Medical Research Council Gambia',
-  //   position: 'Data Science Postdoctoral Researcher in Epidemics',
-  //     image: OusmanBah,
-  // },
-=======
-<<<<<<< Updated upstream
   {
     id: 5,
     name: 'Honourable Ousman Bah',
     role: 'Ministry of Communications and Digital Economy',
     position: 'Minister',
     image: OusmanBah,
+    tags: ['Leadership', 'Government'],
   },
   {
     id: 6,
@@ -77,6 +47,7 @@ export const speakers = [
     role: 'Huawei Technologies Research',
     position: 'Senior Research Engineer',
     image: OusmanBah,
+    tags: ['Research', 'Technology'],
   },
   {
     id: 7,
@@ -84,17 +55,16 @@ export const speakers = [
     role: 'Medical Research Council Gambia',
     position: 'Researcher and Developer',
     image: OusmanBah,
+    tags: ['Research', 'Development'],
   },
   {
     id: 8,
     name: 'Dr. Ismaël KONÉ',
     role: 'Medical Research Council Gambia',
     position: 'Data Science Postdoctoral Researcher in Epidemics',
-      image: OusmanBah,
+    image: OusmanBah,
+    tags: ['Data Science', 'Epidemiology', 'Research'],
   },
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 ]
 
 export const organizers = [

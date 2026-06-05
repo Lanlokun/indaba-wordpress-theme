@@ -23,20 +23,6 @@ export default function WhyJoin() {
   ]
 
   return (
-<<<<<<< Updated upstream
-    <section id="why-join" className="py-12 lg:py-16 bg-light">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="animate-slideIn">Why Join <span className="text-primary">AI-GAMNET?</span></h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-=======
-<<<<<<< Updated upstream
-    <section id="why-join" className="py-16 bg-light">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-dark mb-4 animate-slideIn">Why Join</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-=======
     <section id="why-join" className="relative py-12 lg:py-16 bg-gradient-to-br from-light via-white to-light overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -102,8 +88,6 @@ export default function WhyJoin() {
         <div className="text-center mb-16">
           <h2 className="animate-slideIn">Why Join <span className="text-primary">AI-GAMNET?</span></h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
->>>>>>> Stashed changes
->>>>>>> Stashed changes
             AI-GamNet aims to build a sustainable pan-African community of AI expertise,<br />
             create local leadership in AI across The Gambia,<br /> and
             recognise excellence in research and application of AI technologies.
@@ -116,21 +100,6 @@ export default function WhyJoin() {
             return (
               <div
                 key={index}
-<<<<<<< Updated upstream
-                className="p-8 bg-white rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn"
-=======
-<<<<<<< Updated upstream
-                className="p-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animate-fadeIn"
->>>>>>> Stashed changes
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {Icon && <Icon className="w-12 h-12 text-primary mb-4" />}
-                <h4 className="text-xl font-bold text-dark mb-3">{item.title}</h4>
-<<<<<<< Updated upstream
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
-=======
-                <p className="text-gray-600">{item.description}</p>
-=======
                 className="group relative p-8 bg-white rounded-xl shadow-md hover:shadow-2xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-3 animate-fadeIn overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -159,8 +128,6 @@ export default function WhyJoin() {
 
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-3 rounded-xl transition-opacity duration-300 blur-xl pointer-events-none"></div>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
               </div>
             )
           })}
