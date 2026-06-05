@@ -39,7 +39,7 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-primary transition-colors font-medium"
+                className="nav-link"
               >
                 {item.label}
               </a>
@@ -51,7 +51,7 @@ export default function Header() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScMO0feFXXiCUNxzRPUWJ6Yh4aVuKIV8JTMZE6PCXEuJxAMHg/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all font-semibold"
+              className="btn-primary"
             >
               Register Now
             </a>
@@ -72,7 +72,7 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-primary transition-colors font-medium"
+                className="nav-link"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}
@@ -82,7 +82,7 @@ export default function Header() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScMO0feFXXiCUNxzRPUWJ6Yh4aVuKIV8JTMZE6PCXEuJxAMHg/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-all font-semibold text-center"
+              className="btn-primary text-center"
             >
               Register Now
             </a>

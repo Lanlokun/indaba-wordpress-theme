@@ -18,18 +18,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-white text-gray-900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-[1400px] mx-auto;
 }
 
 section {
-  @apply py-12 md:py-16;
-}
-
-h2 {
-  @apply text-3xl md:text-4xl font-bold;
+  @apply py-16 md:py-20;
 }
 
 /* Animations */
@@ -53,10 +62,374 @@ h2 {
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 107, 53, 0.8);
+  }
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgba(255, 107, 53, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 107, 53, 0.8);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline-expand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .animate-slideIn {
   animation: slideIn 0.5s ease-in-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 1000px 100%;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+.animate-rotate-icon {
+  animation: rotate-icon 0.8s ease-in-out;
+}
+
+.animate-pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Interactive Button States */
+.btn-primary {
+  @apply px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-primary/50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+.btn-primary:hover {
+  @apply -translate-y-1;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-primary hover:text-white;
+}
+
+/* Navigation Link Hover */
+.nav-link {
+  @apply text-gray-600 font-medium transition-all duration-300 relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  @apply text-primary;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Card Interactive States */
+.card-interactive {
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+}
+
+.card-image-hover img {
+  @apply transition-all duration-300 transform;
+}
+
+.card-image-hover:hover img {
+  @apply scale-110;
+}
+
+/* Icon Animation */
+.icon-hover {
+  @apply transition-all duration-300 transform;
+}
+
+.icon-hover:hover {
+  @apply scale-110 rotate-12;
+}
+
+/* Smooth Underline Effect */
+.underline-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.underline-animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Grid Pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(255, 107, 53, 0.05) 25%, rgba(255, 107, 53, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 107, 53, 0.05) 75%, rgba(255, 107, 53, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(255, 107, 53, 0.05) 25%, rgba(255, 107, 53, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 107, 53, 0.05) 75%, rgba(255, 107, 53, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+}
+
+/* Animation Delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Responsive Container Padding */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Section Spacing Utilities */
+.section-title {
+  @apply text-4xl md:text-5xl font-black text-dark mb-6;
+}
+
+.section-subtitle {
+  @apply text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed;
+}
+
+.section-spacing {
+  @apply mb-16 text-center;
+}
+
+/* Card Styling Consistency */
+.card-hover {
+  @apply rounded-xl shadow-md hover:shadow-xl hover:border-primary border-2 border-transparent transition-all duration-300 transform hover:-translate-y-2;
+}
+
+/* ========== COMPREHENSIVE TYPOGRAPHY HIERARCHY ========== */
+
+/* H1 - Display/Hero Heading */
+h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6;
+  letter-spacing: -0.02em;
+}
+
+/* H2 - Section Headings */
+h2 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6;
+  letter-spacing: -0.015em;
+}
+
+/* H3 - Subsection Headings */
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-4;
+  letter-spacing: -0.01em;
+}
+
+/* H4 - Card/Component Headings */
+h4 {
+  @apply text-xl md:text-2xl font-bold leading-relaxed mb-3;
+}
+
+/* H5 - Small Headings */
+h5 {
+  @apply text-lg md:text-xl font-semibold leading-relaxed mb-2;
+}
+
+/* H6 - Smallest Headings */
+h6 {
+  @apply text-base md:text-lg font-semibold leading-relaxed mb-2 uppercase tracking-wide;
+}
+
+/* ========== TEXT HIERARCHY CLASSES ========== */
+
+/* Display Text - Largest */
+.text-display {
+  @apply text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none;
+}
+
+/* Hero Text - Large */
+.text-hero {
+  @apply text-5xl md:text-6xl font-black tracking-tight leading-tight;
+}
+
+/* Heading Text */
+.text-heading {
+  @apply text-3xl md:text-4xl lg:text-5xl font-black leading-tight;
+}
+
+/* Subheading Text */
+.text-subheading {
+  @apply text-xl md:text-2xl lg:text-3xl font-bold leading-relaxed;
+}
+
+/* Caption Text */
+.text-caption {
+  @apply text-xs md:text-sm font-medium text-gray-600 uppercase tracking-widest;
+}
+
+/* Label Text */
+.text-label {
+  @apply text-sm font-semibold text-gray-700;
+}
+
+/* Body Text - Default */
+p, .text-body {
+  @apply text-base md:text-lg font-normal leading-relaxed text-gray-700;
+}
+
+/* Emphasis Text */
+.text-emphasis {
+  @apply font-semibold text-gray-900;
+}
+
+/* Muted Text */
+.text-muted {
+  @apply text-gray-500 font-normal;
+}
+
+/* ========== TYPOGRAPHY UTILITY CLASSES ========== */
+
+/* Letter Spacing */
+.tracking-wider-lg {
+  letter-spacing: 0.05em;
+}
+
+.tracking-tight-lg {
+  letter-spacing: -0.02em;
+}
+
+/* Line Height */
+.leading-display {
+  @apply leading-none;
+}
+
+.leading-heading {
+  @apply leading-snug;
+}
+
+.leading-body {
+  @apply leading-relaxed;
 }
